@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="static/css/main.css" type="text/css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script>
+		function myFunction() {
+			var x = document.getElementById("topnavbar");
+			if (x.className === "navbar") {
+				x.className += " responsive";
+			} else {
+				x.className = "navbar";
+			}
+		} 
+		</script>
+		<title>Kalawati Enterprises Homepage (beta)</title>
+	</head>
+	<body>
+		<div id="navbar-container">
+		<nav id="navbar">
+			<a href="/" id="site-logo"><img src="static/media/site-logo.png" width="125" height="51"></img></a>
+			<a href="https://www.google.com/maps/place/Kalawati+Enterprises/@28.8003396,76.1435002,17z/data=!3m1!4b1!4m5!3m4!1s0x391266cfb047e691:0x844ff4300770443c!8m2!3d28.8003235!4d76.1456706" class="link"><button type="button" id="locate-button">Locate US</button></a>
+			<a href="/" class="link">HOME</a>
+		</nav>
+		</div>
+	</body>
+</html>
