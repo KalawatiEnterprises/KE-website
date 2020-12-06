@@ -10,30 +10,16 @@
 
 body {
 	background-color: pink;
+	margin: 7px;
 }
 
-#navbar {
-	float: right;
-	background-color: #fff;
-	margin-top: 2%;
-	padding-top: 1%;
-	padding-right: 13px;
-	padding-bottom: 10px;
-	padding-left: 1%;
-	border-radius: 20px 0px 0px 20px;
-}
-
-#navbar a:visited {
-	color: hotpink;
-}
-
-#navbar a:hover {
-	color: black;
-}
-
-#navbar .link {
-	float: right;
-	padding: 0px 4px;
+@media only screen and (max-device-width: 480px) {
+	body {
+		background-color: #fff;
+	}
+	#x{ display: inline; }
+	#placeholder{ display: none; }
+	#head{ display: none; }
 }
 
 #locate-button {
@@ -45,11 +31,49 @@ body {
 	padding: 4px 10px;
 }
 
+/* Add a black background color to the top navigation */
 #head {
-	position: fixed;
-	width: 100%;
-	transition: top 0.3s;
+	position: relative;
+	width: 101%;
 	background-color: #232627;
-	white-space: nowrap;
-	padding-bottom: 8px;
+	overflow: hidden;
+	margin: -7px;
+}
+
+/* Style the links inside the navigation bar */
+#navbar a {
+	color: #232627;
+	text-align: center;
+	text-decoration: none;
+	font-size: 17px;
+	padding: 4px;
+}
+
+#navbar {
+	padding: 15px 16px;
+	float: right;
+	background-color: #FFFFFF;
+	border-radius: 25px 0px 0px 25px;
+}
+
+#KE {
+	border-radius:  0px 25px 25px 0px;
+	float: left;
+	padding: 12px 16px;
+	background-color: #37d29e;
+}
+
+#KE a {
+	color: #0f0f0f;
+	text-decoration: none;
+	font-size: 132%;
+}
+
+.foot-text {
+	text-align: center;
+}
+
+.foot-line {
+	color: #232627;
+	width: 100%;
 }
