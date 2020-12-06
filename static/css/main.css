@@ -1,21 +1,11 @@
-#site-logo-container {
-	position: fixed;
-	margin-top: -10px;
-}
-
-#site-logo-image { 
-	width: 50%;
-	border-radius: 10px;
-}
-
 body {
-	background-color: pink;
+	background-color: #f8eeb4;
 	margin: 7px;
 }
 
 @media only screen and (max-device-width: 480px) {
 	body {
-		background-color: #fff;
+		background-color: grey;
 	}
 	#x{ display: inline; }
 	#placeholder{ display: none; }
@@ -23,18 +13,19 @@ body {
 }
 
 #locate-button {
-	margin-top: -2px;
+	text-align: center;
 	border: 1px solid #f487c3;
-	background-color: #232627;
+	background-color: #333;
 	border-radius: 15px;
 	color: #FFFFFF;
-	padding: 4px 10px;
+	display: inline;
+	padding: 5px 7px;
+	margin-top: 10px;
+	margin-left: 15px;
 }
 
 /* Add a black background color to the top navigation */
 #head {
-	position: relative;
-	width: 101%;
 	background-color: #232627;
 	overflow: hidden;
 	margin: -7px;
@@ -77,3 +68,14 @@ body {
 	color: #232627;
 	width: 100%;
 }
+
+#locate-button-container {
+	float: right;
+	position: relative;
+	right: 7px;
+}
+
+#locate-button-container a {
+	text-decoration: none;
+}
+
