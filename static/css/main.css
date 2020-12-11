@@ -3,15 +3,6 @@ body {
 	margin: 7px;
 }
 
-@media only screen and (max-device-width: 480px) {
-	body {
-		background-color: grey;
-	}
-	#x{ display: inline; }
-	#placeholder{ display: none; }
-	#head{ display: none; }
-}
-
 #locate-button {
 	text-align: center;
 	border: 1px solid #f487c3;
@@ -55,7 +46,7 @@ body {
 }
 
 #KE a {
-	color: #0f0f0f;
+	color: #6f0c05df;
 	text-decoration: none;
 	font-size: 132%;
 }
@@ -79,3 +70,8 @@ body {
 	text-decoration: none;
 }
 
+@media only screen and (max-device-width: 480px) {
+	#locate-button-container {
+		right: 30px;
+	}
+}

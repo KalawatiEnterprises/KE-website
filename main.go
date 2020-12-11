@@ -28,7 +28,7 @@ func main() {
 
 	// serve pages
 	router.GET("/", homePage)
-	router.GET("/locate", locatePage)
+	router.GET("/t", templatePage)
 
 
 	router.Run(":" + port)
@@ -37,7 +37,8 @@ func main() {
 func homePage(c *gin.Context) {
 	c.HTML(http.StatusOK, "index.html", nil)
 }
-func locatePage(c *gin.Context) {
-        c.HTML(http.StatusOK, "locate-us.html", nil)
+
+func templatePage(c *gin.Context) {
+	c.HTML(http.StatusOK, "TEMPLATE.html", nil)
 }
 
