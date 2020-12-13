@@ -47,10 +47,6 @@ body {
 	color: #37d29e;
 }
 
-#navbar a {
-
-}
-
 #navbar {
 	padding: 16.5px 16px;
 	float: right;
@@ -111,5 +107,8 @@ body {
 	}
 	#locate-button {
 		font-size: 16px;
+	}
+	#locate-button {
+	margin-top: 10px;
 	}
 }
