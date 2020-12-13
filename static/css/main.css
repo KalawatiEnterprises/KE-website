@@ -11,8 +11,15 @@ body {
 	color: #FFFFFF;
 	display: inline;
 	padding: 5px 7px;
-	margin-top: 10px;
+	margin-top: 13px;
 	margin-left: 15px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+}
+
+#locate-button:hover {
+	color: #37d29e;
+	border: 1px solid #37d29e;
 }
 
 /* Add a black background color to the top navigation */
@@ -29,6 +36,19 @@ body {
 	text-decoration: none;
 	font-size: 17px;
 	padding: 4px;
+}
+
+#navbar a:hover {
+	color: #f487c3;
+	font-size: 18px;
+}
+
+#navbar a:active {
+	color: #37d29e;
+}
+
+#navbar a {
+
 }
 
 #navbar {
