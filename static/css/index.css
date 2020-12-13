@@ -1,0 +1,18 @@
+.intro {
+	background-color: #FCFCFC;
+	
+	margin: auto;
+	margin-top: 3%;
+	width: 80%;
+	border: 5px solid #FFFF00;
+	padding: 30px;
+	
+}
+
+@media only screen and (max-device-width: 480px) {
+	.intro { 
+		width: 90%; 
+		padding: 10px;
+		margin-top: 8%;
+	}
+}
