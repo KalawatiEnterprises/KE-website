@@ -24,7 +24,12 @@ func main() {
 	router := gin.New()
 	router.Use(gin.Logger())
 	router.LoadHTMLGlob("templates/*")
+
+	// directories
 	router.Static("/static", "static")
+	router.Static("/css", "static/css")
+	router.Static("/scripts", "static/scripts")
+	router.Static("/media", "static/media")
 
 	// serve pages
 	router.GET("/", homePage)
