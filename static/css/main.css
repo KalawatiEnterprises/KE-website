@@ -1,6 +1,6 @@
 body {
-	background-color: #f8eeb4;
 	margin: 7px;
+	background-color: #f8eeb4;
 }
 
 #locate-button {
@@ -24,7 +24,7 @@ body {
 
 /* Add a black background color to the top navigation */
 #head {
-	background-color: #232627;
+	background-color: #232627dd;
 	overflow: hidden;
 	margin: -7px;
 }
