@@ -5,11 +5,9 @@ import (
 	//"log"
 	"net/http"
 	//"os"
-	//"fmt"
 )
 
 var port string
-
 func getPort() { // automatically get the assigned port on heroku
 	port = "8080"
 //	port = os.Getenv("PORT")
@@ -33,17 +31,15 @@ func main() {
 
 	// serve pages
 	router.GET("/", homePage)
-	router.GET("/t", templatePage)
-
+	router.GET("/brands", brandsPage)
 
 	router.Run(":" + port)
 }
 
-func homePage(c *gin.Context) {
+func homePage (c *gin.Context) {
 	c.HTML(http.StatusOK, "index.html", nil)
 }
 
-func templatePage(c *gin.Context) {
-	c.HTML(http.StatusOK, "TEMPLATE.html", nil)
+func brandsPage (c *gin.Context) {
+	c.HTML(http.StatusOK, "brands.html", nil)
 }
-
