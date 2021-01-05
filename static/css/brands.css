@@ -1,0 +1,13 @@
+.brand {
+	border: 1px solid #232627;
+	background-color: #FCFCFCdf;
+
+	width: 250px;
+	height: 280px;
+
+	padding: 3%;
+	margin: 3% 5%;
+}
+
+body { background-image: url("../media/City.png");
+background-repeat: no-repeat;background-size: cover;}
