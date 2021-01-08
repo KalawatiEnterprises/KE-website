@@ -1,10 +1,8 @@
 #brands {
-	display: grid;
-	grid-template-columns: auto auto auto auto;
-	margin: 3% 4%;
-
-	grid-row-gap: 45px;
-	grid-column-gap: 40px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: auto;
 }
 
 .brand {
@@ -12,8 +10,9 @@
 	border-radius: 20px;
 	background-color: #FCFCFCdf;
 
-	width: 250px;
-	height: 280px;
+	margin: 30px;
+	width: 270px;
+	height: 300px;
 
 }
 
@@ -59,8 +58,4 @@ body { background-image: url("../media/City.png");
 background-repeat: no-repeat; background-size: center;}
 
 @media only screen and (max-device-width: 480px) {
-	#brands {
-		padding-left: 7%;
-		grid-template-columns: auto;
-	}
 }
