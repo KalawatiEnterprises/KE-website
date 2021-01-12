@@ -9,7 +9,7 @@ import (
 
 var port string
 func getPort() { // automatically get the assigned port on heroku
-	port = "8080"
+	port = "8069"
 //	port = os.Getenv("PORT")
 
 //	if port == "" {
@@ -30,16 +30,17 @@ func main() {
 	router.Static("/media", "static/media")
 
 	// serve pages
-	router.GET("/", homePage)
-	router.GET("/brands", brandsPage)
+	router.GET("/", func (c *gin.Context) {
+	c.HTML(http.StatusOK, "index.html", nil)
+	})
+
+	router.GET("/brands", func (c *gin.Context) {
+	c.HTML(http.StatusOK, "brands.html", nil)
+	})
+
+	router.GET("/contactus", func (c *gin.Context) {
+	c.HTML(http.StatusOK, "contactus.html", nil)
+	})
 
 	router.Run(":" + port)
-}
-
-func homePage (c *gin.Context) {
-	c.HTML(http.StatusOK, "index.html", nil)
-}
-
-func brandsPage (c *gin.Context) {
-	c.HTML(http.StatusOK, "brands.html", nil)
 }
