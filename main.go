@@ -5,6 +5,7 @@ import (
 	//"log"
 	"net/http"
 	//"os"
+	"fmt"
 )
 
 var port string
@@ -15,6 +16,13 @@ func getPort() { // automatically get the assigned port on heroku
 //	if port == "" {
 //		log.Fatal("$PORT must be set")
 //	}
+}
+
+type contactInfo struct {
+	name string
+	email string
+	phone string
+	message string
 }
 
 func main() {
@@ -31,16 +39,34 @@ func main() {
 
 	// serve pages
 	router.GET("/", func (c *gin.Context) {
-	c.HTML(http.StatusOK, "index.html", nil)
+		c.HTML(http.StatusOK, "index.html", nil)
 	})
 
 	router.GET("/brands", func (c *gin.Context) {
-	c.HTML(http.StatusOK, "brands.html", nil)
+		c.HTML(http.StatusOK, "brands.html", nil)
 	})
 
 	router.GET("/contactus", func (c *gin.Context) {
-	c.HTML(http.StatusOK, "contactus.html", nil)
+		c.HTML(http.StatusOK, "contactus.html", nil)
 	})
 
+	router.POST("/contactus", getContact)
+
 	router.Run(":" + port)
+}
+
+func getContact (c *gin.Context) {
+	contact := contactInfo {
+		name    : c.PostForm("fullname"),
+		email   : c.PostForm("email"),
+		phone   : c.PostForm("phone"),
+		message : c.PostForm("message"),
+	}
+	validateContact(contact)
+}
+
+func validateContact (contact contactInfo) {
+	switch contact {
+		// poop
+	}
 }

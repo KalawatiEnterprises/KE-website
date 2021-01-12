@@ -9,9 +9,8 @@
 <body>
 {{ template "navbar.html" .}}
 <div class="main">
-
 	<div class="textbox" id="contact-form">
-		<form>
+		<form method="post">
 			<label for="fullname">Name: </label>
 			<input type="text" id="fullname" name="fullname"></input>
 			<br>
@@ -24,9 +23,9 @@
 			<label for="email">Message: </label>
 			<input type="text" id="message" name="message"></input>
 			<br>
+			<input type="submit" value="Submit">
 		</form>
 	</div>
-
 </div>
 {{ template "footer.html" .}}
 </body>
