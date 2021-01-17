@@ -2,15 +2,17 @@ package main
 
 import (
 	"github.com/gin-gonic/gin"
-	//"log"
 	"net/http"
 	//"os"
 	"fmt"
 )
 
-var port string
+var (
+	port string
+)
+
 func getPort() { // automatically get the assigned port on heroku
-	port = "8069"
+	port = "8080"
 //	port = os.Getenv("PORT")
 
 //	if port == "" {
@@ -62,11 +64,11 @@ func getContact (c *gin.Context) {
 		phone   : c.PostForm("phone"),
 		message : c.PostForm("message"),
 	}
-	validateContact(contact)
-}
-
-func validateContact (contact contactInfo) {
-	switch contact {
-		// poop
+	if (contact.email != "") {
+		confirmMail(contact.message, contact.email)
 	}
+	if (contact.name != "" && (contact.email != "" || contact.phone != "")) {
+		notifySubmission(contact.name, contact.email, contact.phone, contact.message)
+	}
+	fmt.Println(contact)
 }
