@@ -52,12 +52,13 @@ func main() {
 		c.HTML(http.StatusOK, "contactus.html", nil)
 	})
 
-	router.POST("/contactus", getContact)
+	//router.POST("/contactus", getContact)
 
 	router.Run(":" + port)
 }
 
 func getContact (c *gin.Context) {
+	return
 	contact := contactInfo {
 		name    : c.PostForm("fullname"),
 		email   : c.PostForm("email"),
