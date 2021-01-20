@@ -36,14 +36,14 @@ func main() {
 	// directories
 	router.Static("/static", "static")
 	router.Static("/css", "static/css")
-	router.Static("/scripts", "static/scripts")
-	router.Static("/media", "static/media")
+	//router.Static("/scripts", "static/scripts")
+	//router.Static("/media", "static/media")
 
 	// serve pages
 	router.GET("/", func (c *gin.Context) {
 		c.HTML(http.StatusOK, "index.html", nil)
 	})
-
+/*
 	router.GET("/brands", func (c *gin.Context) {
 		c.HTML(http.StatusOK, "brands.html", nil)
 	})
@@ -51,7 +51,7 @@ func main() {
 	router.GET("/contactus", func (c *gin.Context) {
 		c.HTML(http.StatusOK, "contactus.html", nil)
 	})
-
+*/
 	//router.POST("/contactus", getContact)
 
 	router.Run(":" + port)
