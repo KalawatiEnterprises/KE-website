@@ -3,40 +3,78 @@ body {
 	background-color: #f8eeb4;
 }
 
+.main {
+	padding-top: 78px;
+	padding-bottom: 16px;
+
+	width: 90%;
+	margin: auto;
+}
+
 hr {
 	color: #232627; 
 }
 
+/* default flex properties */
 .flex-container {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
 }
 
+.content-blocks {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+}
+.content-block {
+	background-color: #FCFCFCdd;
+	border: 3px solid #232627;
+	padding: 20px;
+}
 .site-title-container {
 	background-color: #37d29e;
+	padding: 10px;
 }
 .site-title {
-        color: #6f0c05df;
-        /*font-size: 28px;
-        margin: -10px;*/
+        color: #682518;
+        font-size: 28px;
+	margin: 0px; /* remove from .head if not modified */
 }
 .site-subtitle {
-	background-color: #37d29e;
-        /*padding-top: 3px;
-        margin: -10px;*/
+	color: #232627;
+	margin: -10px 0px 0px 0px;
 }
 
 .head {
 	background-color: #232627dd;
        
-	overflow: hidden;
         position: fixed;
 	top: 0;
-        
+	overflow: hidden;
+
 	width: 100%;
 	margin: 0px;
 	height: 55px;
+}
+
+.head a { text-decoration: none; }
+
+.head .site-title-container {
+	padding: 2px 0px 5px 0px;
+	display: inline-block;
+	border-radius:  0px 27px 27px 0px;
+}
+.head .site-title{
+	font-size: 22px;
+	padding: 3px 16px 0px 8px;
+	margin: 0px;
+	display: block;
+}
+.head .site-subtitle{
+	font-size: 16px;
+	padding: 3px 16px 0px 8px;
+	display: block;
 }
 
 nav {
@@ -44,12 +82,12 @@ nav {
         float: right;
         background-color: #FFFFFF;
         border-radius: 27px 0px 0px 27px;
+	display: inline-block;
 }
 
 nav a {
         color: #232627;
         text-align: center;
-        text-decoration: none;
         font-size: 17px;
         padding: 4px;
 	box-sizing: border-box;
