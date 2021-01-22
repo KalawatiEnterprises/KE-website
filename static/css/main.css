@@ -1,3 +1,15 @@
+/* fonts */
+.head, .site-title-container nav { 
+	font-family: "Roboto";
+	font-weight: 400;
+}
+
+h1, p { 
+	font-family: "Roboto";
+	font-weight: 400; //normal
+}
+
+
 body {
 	margin: 0px;
 	background-color: #f8eeb4;
@@ -13,6 +25,25 @@ body {
 
 hr {
 	color: #232627; 
+}
+
+.button {
+        color: #FFFFFF;
+        background-color: #333333;
+        display: inline;
+
+        border: 1px solid #f487c3;
+	border-radius: 15px;
+        
+        padding: 5px 7px;
+
+        transition-duration: 0.4s;
+        cursor: pointer;
+}
+
+.button:hover {
+        color: #37d29e;
+        border-color: #37d29e;
 }
 
 /* default flex properties */
@@ -31,7 +62,10 @@ hr {
 	background-color: #FCFCFCdd;
 	border: 3px solid #232627;
 	padding: 20px;
+	margin: 20px;
+	height: 350px;
 }
+
 .site-title-container {
 	background-color: #37d29e;
 	padding: 10px;
@@ -43,7 +77,7 @@ hr {
 }
 .site-subtitle {
 	color: #232627;
-	margin: -10px 0px 0px 0px;
+	margin: -8px 0px 0px 0px;
 }
 
 .head {
