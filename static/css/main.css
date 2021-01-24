@@ -41,7 +41,7 @@ hr {
 	height: 35px;
 	width: 90px;
 
-	font-size: 15px;
+	font-size: 16px;
 }
 .button:hover {
         color: #37d29e;
@@ -89,7 +89,7 @@ hr {
 .head {
 	background-color: #232627dd;
        
-        position: fixed;
+        position: absolute;
 	top: 0;
 	overflow: hidden;
 
@@ -172,13 +172,17 @@ nav a:active {
 }
 
 @media only screen and (max-device-width: 480px) {
+	.main {
+		padding-top: 70px;
+		padding-bottom: 16px;
+		width: 93%;
+		margin: auto;
+	}
 	.head .site-title-container {
 		display: none;
 	}
 	.head .locate-button {
-		left: 3px;
-		/*right: 285px;
-		top: 10px;*/
+		left: 4px;
 	}
 	.button {
 		height: 35px;
@@ -186,5 +190,9 @@ nav a:active {
 	}
 	nav {
 		width: 250px;
+	}
+	.content-block {
+		padding: 8px;
+		margin: 12px;
 	}
 }
