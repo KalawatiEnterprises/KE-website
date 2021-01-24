@@ -4,9 +4,9 @@
 	font-weight: 400;
 }
 
-h1, p { 
+h1, p, button { 
 	font-family: "Roboto";
-	font-weight: 400; //normal
+	font-weight: 400;
 }
 
 
@@ -33,17 +33,23 @@ hr {
         display: inline;
 
         border: 1px solid #f487c3;
-	border-radius: 15px;
+	border-radius: 17px;
         
-        padding: 5px 7px;
 
         transition-duration: 0.4s;
         cursor: pointer;
-}
+	height: 35px;
+	width: 90px;
 
+	font-size: 15px;
+}
 .button:hover {
         color: #37d29e;
         border-color: #37d29e;
+}
+.button:active {
+	text-decoration: none;
+        color: #333333;
 }
 
 /* default flex properties */
@@ -111,12 +117,23 @@ hr {
 	display: block;
 }
 
+.head .locate-button {
+	display: inline-block;
+	position: absolute;
+	right: 295px;
+	top: 10px;
+}
+
 nav {
         padding: 16.5px 16px;
-        float: right;
         background-color: #FFFFFF;
         border-radius: 27px 0px 0px 27px;
+	overflow: hidden;
+
 	display: inline-block;
+	position: absolute;
+	right: 0;
+	width: 260px;
 }
 
 nav a {
@@ -124,7 +141,7 @@ nav a {
         text-align: center;
         font-size: 17px;
         padding: 4px;
-	box-sizing: border-box;
+	0ox-sizing: border-box;
 }
 nav a:hover {
         color: #f487c3;
@@ -152,4 +169,22 @@ nav a:active {
 
         width: 270px;
         height: 270px;
+}
+
+@media only screen and (max-device-width: 480px) {
+	.head .site-title-container {
+		display: none;
+	}
+	.head .locate-button {
+		left: 3px;
+		/*right: 285px;
+		top: 10px;*/
+	}
+	.button {
+		height: 35px;
+		width: 90px;
+	}
+	nav {
+		width: 250px;
+	}
 }
