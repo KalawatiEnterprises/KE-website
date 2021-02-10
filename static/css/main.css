@@ -1,12 +1,13 @@
 /* fonts */
-.head, .site-title-container nav { 
+/*.head, .site-title-container nav { 
 	font-family: "Roboto";
 	font-weight: 400;
-}
+}*/
 
-h1, p, button { 
+* { 
 	font-family: "Roboto";
 	font-weight: 400;
+	font-size: 1rem;
 }
 
 
@@ -57,6 +58,7 @@ hr {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+	justify-content: space-between;
 }
 
 .content-blocks {
@@ -88,8 +90,14 @@ hr {
 
 .head {
 	background-color: #232627dd;
+	display: flex;
+	flex-direction: row;
+        flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+
        
-        position: absolute;
+        position: fixed;
 	top: 0;
 	overflow: hidden;
 
@@ -106,22 +114,24 @@ hr {
 	border-radius:  0px 27px 27px 0px;
 }
 .head .site-title{
-	font-size: 22px;
+	font-size: 1.5rem;
 	padding: 3px 16px 0px 8px;
 	margin: 0px;
 	display: block;
 }
 .head .site-subtitle{
-	font-size: 16px;
+	font-size: 1rem;
 	padding: 3px 16px 0px 8px;
 	display: block;
 }
 
 .head .locate-button {
 	display: inline-block;
-	position: absolute;
+	justify-self: flex-start;
+	/*position: absolute;
 	right: 295px;
-	top: 10px;
+	top: 10px;*/
+	margin-left: auto;
 }
 
 nav {
@@ -131,21 +141,21 @@ nav {
 	overflow: hidden;
 
 	display: inline-block;
-	position: absolute;
+	/*position: absolute;
 	right: 0;
-	width: 260px;
+	width: 260px;*/
 }
 
 nav a {
         color: #232627;
         text-align: center;
-        font-size: 17px;
-        padding: 4px;
-	0ox-sizing: border-box;
+        font-size: 1.2rem;
+        padding: 0.1rem;
+	box-sizing: border-box;
 }
 nav a:hover {
         color: #f487c3;
-        font-size: 18px;
+        font-size: 1.2rem;
 }
 nav a:active {
         color: #37d29e;
@@ -172,25 +182,32 @@ nav a:active {
 }
 
 @media only screen and (max-device-width: 480px) {
+	.head {
+		flex-wrap: wrap;
+		height: auto;
+	}
+	nav {
+		margin-left: auto;
+	}
 	.main {
 		padding-top: 70px;
 		padding-bottom: 16px;
 		width: 93%;
 		margin: auto;
 	}
-	.head .site-title-container {
+	/*.head .site-title-container {
 		display: none;
 	}
 	.head .locate-button {
 		left: 4px;
-	}
+	}*/
 	.button {
 		height: 35px;
 		width: 90px;
 	}
-	nav {
-		width: 250px;
-	}
+	/*nav {
+		width: 253px;
+	}*/
 	.content-block {
 		padding: 8px;
 		margin: 12px;
