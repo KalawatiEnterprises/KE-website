@@ -109,21 +109,28 @@ hr {
 .head a { text-decoration: none; }
 
 .head .site-title-container {
+	height: 48px;
 	padding: 2px 0px 5px 0px;
 	display: inline-block;
-	border-radius:  0px 27px 27px 0px;
+	border-radius:  0px 30px 30px 0px;
 }
 .head .site-title{
-	font-size: 1.5rem;
-	padding: 3px 16px 0px 8px;
+	font-size: 1.3rem;
+	padding: 0.3rem 16px 0px 8px;
 	margin: 0px;
 	display: block;
 }
-.head .site-subtitle{
+.head .site-subtitle {
+	font-size: 1rem;
+	padding: 3px 20px 0.2rem 10px;
+	display: block;
+}
+
+/*.head .site-subtitle{
 	font-size: 1rem;
 	padding: 3px 16px 0px 8px;
 	display: block;
-}
+}*/
 
 .head .locate-button {
 	display: inline-block;
@@ -132,6 +139,7 @@ hr {
 	right: 295px;
 	top: 10px;*/
 	margin-left: auto;
+	margin-right: 8px;
 }
 
 nav {
@@ -144,12 +152,13 @@ nav {
 	/*position: absolute;
 	right: 0;
 	width: 260px;*/
+	height: 22px;
 }
 
 nav a {
         color: #232627;
         text-align: center;
-        font-size: 1.2rem;
+        font-size: 1rem;
         padding: 0.1rem;
 	box-sizing: border-box;
 }
@@ -186,11 +195,27 @@ nav a:active {
 		flex-wrap: wrap;
 		height: auto;
 	}
+	/*.head .site-title {
+		font-size: 1.4rem;
+		padding: 6px 20px 0px 10px;
+	}
+	.head .site-subtitle {
+		font-size: 1rem;
+		padding: 3px 20px 3px 10px;
+		display: block;
+	}*/
 	nav {
 		margin-left: auto;
 	}
+	nav a {
+		font-size: 1.05rem;
+		padding: 7px;
+	}
+	.head .locate-button {
+		margin: auto;
+	}
 	.main {
-		padding-top: 70px;
+		padding-top: 120px;
 		padding-bottom: 16px;
 		width: 93%;
 		margin: auto;
