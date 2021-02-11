@@ -143,7 +143,6 @@ hr {
 }
 
 nav {
-        padding: 16.5px 16px;
         background-color: #FFFFFF;
         border-radius: 27px 0px 0px 27px;
 	overflow: hidden;
@@ -152,15 +151,17 @@ nav {
 	/*position: absolute;
 	right: 0;
 	width: 260px;*/
-	height: 22px;
+	height: 55px;
+        padding: 0px 20px;
 }
 
 nav a {
         color: #232627;
-        text-align: center;
+	display: inline; 
+	vertical-align: middle;
+	line-height: 55px;
         font-size: 1rem;
-        padding: 0.1rem;
-	box-sizing: border-box;
+        padding: 0.2rem;
 }
 nav a:hover {
         color: #f487c3;
@@ -192,6 +193,7 @@ nav a:active {
 
 @media only screen and (max-device-width: 480px) {
 	.head {
+		position: static;
 		flex-wrap: wrap;
 		height: auto;
 	}
@@ -208,14 +210,14 @@ nav a:active {
 		margin-left: auto;
 	}
 	nav a {
-		font-size: 1.05rem;
-		padding: 7px;
+		/*font-size: 1.1rem;
+		padding: 5px;*/
 	}
 	.head .locate-button {
 		margin: auto;
 	}
 	.main {
-		padding-top: 120px;
+		padding-top: 15px;
 		padding-bottom: 16px;
 		width: 93%;
 		margin: auto;
