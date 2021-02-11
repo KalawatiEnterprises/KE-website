@@ -1,0 +1,16 @@
+.tiles-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+	justify-content: space-around;
+}
+
+.tile {
+	display: inline-block;
+	background-color: white;
+	border: 1px solid #232627;
+        border-radius: 20px;
+	padding: 10px 100px;
+	margin: 10px auto;
+}

@@ -43,11 +43,12 @@ func main() {
 	router.GET("/", func (c *gin.Context) {
 		c.HTML(http.StatusOK, "index.html", nil)
 	})
-/*
+
 	router.GET("/brands", func (c *gin.Context) {
 		c.HTML(http.StatusOK, "brands.html", nil)
 	})
 
+/*
 	router.GET("/contactus", func (c *gin.Context) {
 		c.HTML(http.StatusOK, "contactus.html", nil)
 	})
