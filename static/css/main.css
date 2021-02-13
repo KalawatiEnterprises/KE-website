@@ -30,7 +30,7 @@ hr {
 	border: 0.25px solid #232627; 
 }
 
-.button {
+button {
         color: #FFFFFF;
         background-color: #333333;
         display: inline;
@@ -42,17 +42,29 @@ hr {
         transition-duration: 0.4s;
         cursor: pointer;
 	height: 35px;
-	width: 90px;
 
 	font-size: 16px;
 }
-.button:hover {
+button:hover {
         color: #37d29e;
         border-color: #37d29e;
 }
-.button:active {
+button:active {
 	text-decoration: none;
         color: #333333;
+}
+
+.bottom-menu {
+	position: fixed;
+	bottom: 0.5rem;
+	z-index: 2;
+
+	display: flex;
+	width: 100%;
+}
+
+.bottom-menu * {
+	margin: auto 0.7rem;
 }
 
 .footer .flex-container {
@@ -127,7 +139,7 @@ hr {
 }
 .head .site-subtitle {
 	font-size: 1rem;
-	padding: 3px 20px 0.2rem 10px;
+	padding: 3px 20px 0.2rem 8px;
 	display: block;
 }
 

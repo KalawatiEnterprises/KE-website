@@ -17,15 +17,13 @@
 	background-color: white;
 	border: 1px solid #232627;
         border-radius: 20px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: 1px 1px 8px #232627;
 
 	position: relative;
 	z-index: 0;
 	
 	height: 20rem;
 	width: 18rem;
-
-
 	margin: 1rem 1rem;
 
 
@@ -40,9 +38,19 @@
 	width: 100%;
 	height: 3rem;
 	
-	background: #F0F0F0;
+	background: #FCFCFC;
 	opacity: 0.8;
-	box-shadow: 0rem -1rem 1rem 1rem #F0F0F0;
+	box-shadow: 0rem -0.1rem 1rem 1rem #FCFCFC;
+}
+
+.info .title {
+	display: inline-block;
+	margin: 0px;
+	padding: 0px 0px 0px 6px;
+
+
+	font-weight: bold;
+	font-size: 1.5rem;
 }
 
 
@@ -67,3 +75,4 @@
 	background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5fRHPFf0pJjt4W_PnLrGKw8YKmSq_SNdmFg&usqp=CAU");
 	background-repeat: no-repeat;
 	background-size: cover;
+}
