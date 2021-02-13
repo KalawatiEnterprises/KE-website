@@ -1,4 +1,9 @@
+#brands-main {
+	width: 96%;
+}
+
 .tiles-container {
+	width: 100%;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -7,10 +12,58 @@
 }
 
 .tile {
+	transition: width 1.5s;
 	display: inline-block;
 	background-color: white;
 	border: 1px solid #232627;
         border-radius: 20px;
-	padding: 10px 100px;
-	margin: 10px auto;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+	position: relative;
+	z-index: 0;
+	
+	height: 20rem;
+	width: 18rem;
+
+
+	margin: 1rem 1rem;
+
+
+	/*padding: 10px 100px;
+	margin: 10px auto;*/
+	overflow: hidden;
 }
+
+.tile .info {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	height: 3rem;
+	
+	background: #F0F0F0;
+	opacity: 0.8;
+	box-shadow: 0rem -1rem 1rem 1rem #F0F0F0;
+}
+
+
+#hachiman {
+	background: url("https://cdn.myanimelist.net/images/characters/5/292165.webp");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#hachiman:hover {
+	background: url("https://cdn.myanimelist.net/images/characters/4/203555.webp");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#kaguya {
+	background: url("https://cdn.myanimelist.net/images/characters/9/371540.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#ishigami {
+	background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5fRHPFf0pJjt4W_PnLrGKw8YKmSq_SNdmFg&usqp=CAU");
+	background-repeat: no-repeat;
+	background-size: cover;

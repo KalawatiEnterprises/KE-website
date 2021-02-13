@@ -4,8 +4,10 @@
 	font-weight: 400;
 }*/
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
 * { 
-	font-family: "Roboto";
+	font-family: "Roboto", sans-serif;
 	font-weight: 400;
 	font-size: 1rem;
 }
@@ -25,7 +27,7 @@ body {
 }
 
 hr {
-	color: #232627; 
+	border: 0.25px solid #232627; 
 }
 
 .button {
@@ -53,12 +55,13 @@ hr {
         color: #333333;
 }
 
-/* default flex properties */
-.flex-container {
+.footer .flex-container {
+	padding:  2rem;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: space-around;
+	margin: auto;
 }
 
 .content-blocks {
@@ -95,6 +98,8 @@ hr {
         flex-wrap: nowrap;
 	justify-content: space-between;
 	align-items: center;
+
+	z-index: 1;
 
        
         position: fixed;
@@ -180,15 +185,14 @@ nav a:active {
 }
 
 .footer .flex-content {
-        flex-grow: 3;
         background-color: #FCFCFCdf;
         border: 3px solid #232627;
+	margin: 1rem 0rem;
 
-        margin: 45px;
         padding: 15px;
 
-        width: 270px;
-        height: 270px;
+        width: 18rem;
+        height: 18rem;
 }
 
 @media only screen and (max-device-width: 480px) {
