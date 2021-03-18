@@ -10,6 +10,7 @@
 	font-family: "Roboto", sans-serif;
 	font-weight: 400;
 	font-size: 1rem;
+        transition-duration: 0.4s;
 }
 
 
@@ -39,7 +40,6 @@ button {
 	border-radius: 17px;
         
 
-        transition-duration: 0.4s;
         cursor: pointer;
 	height: 35px;
 
@@ -56,25 +56,34 @@ button:active {
 
 .bottom-menu {
 	position: fixed;
-	bottom: 0.5rem;
+	bottom: 0;
 	z-index: 2;
 
 	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+
 	width: 100%;
+	height: 3rem;
+
+	background-color: #232627dd;
+	color: white;
 }
 
 .bottom-menu * {
-	margin: auto 0.7rem;
+	margin: auto 0.3rem;
 }
 
-.footer .flex-container {
-	padding:  2rem;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-	justify-content: space-around;
-	margin: auto;
+.bottom-menu .fa {
+	font-size: 2rem;
 }
+
+.bottom-menu a {
+	color: #FFFFFF;
+}
+
+
 
 .content-blocks {
         display: flex;
@@ -83,10 +92,11 @@ button:active {
 }
 .content-block {
 	background-color: #FCFCFCdd;
-	border: 3px solid #232627;
+	border: 2px solid #232627;
 	padding: 20px;
 	margin: 20px;
 	height: 350px;
+	box-shadow: 1px 1px 4px #232627;
 }
 
 .site-title-container {
@@ -188,23 +198,57 @@ nav a:active {
         color: #37d29e;
 }
 
-
-
-
-
 .footer {
         background-color: #66769f;
 }
+.footer .flex-container a {
+	text-decoration: none;
+	color: #66769f;
+}
+.footer .flex-container a:hover {
+	color: #37D29E;
+}
 
+.footer .flex-container {
+	padding:  2rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+	justify-content: space-around;
+	margin: auto;
+}
 .footer .flex-content {
         background-color: #FCFCFCdf;
         border: 3px solid #232627;
 	margin: 1rem 0rem;
 
-        padding: 15px;
-
-        width: 18rem;
+	overflow: hidden;
+        
+	width: 18rem;
         height: 18rem;
+}
+.footer .flex-content .title {
+	display: inline-block;
+	font-style: bold;
+	font-size: 1.5rem;
+	margin: 0.5rem;
+}
+.footer .flex-content .title a {
+	font-size: 1.5rem;
+}
+
+.footer .address {
+	width: 100%;
+	display: inline-block;
+	background-color: lightgrey;
+	padding: 0.4rem 0rem;
+}
+.footer .address p {
+	font-size: 1.1rem;
+	margin: 0.5rem;
+}
+.footer .address .fa {
+	font-size: 1rem;
 }
 
 @media only screen and (max-device-width: 480px) {
@@ -225,10 +269,10 @@ nav a:active {
 	nav {
 		margin-left: auto;
 	}
-	nav a {
-		/*font-size: 1.1rem;
-		padding: 5px;*/
-	}
+	/*nav a {
+		font-size: 1.1rem;
+		padding: 5px;
+	}*/
 	.head .locate-button {
 		margin: auto;
 	}
@@ -237,6 +281,9 @@ nav a:active {
 		padding-bottom: 16px;
 		width: 93%;
 		margin: auto;
+	}
+	.bottom-menu .menu-buttons {
+		display: none;
 	}
 	/*.head .site-title-container {
 		display: none;

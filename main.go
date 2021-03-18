@@ -7,17 +7,14 @@ import (
 	"fmt"
 )
 
-var (
-	port string
-)
-
-func getPort() { // automatically get the assigned port on heroku
-	port = "8080"
-//	port = os.Getenv("PORT")
+func getPort() string { // automatically get the assigned port on heroku
+	var port string = "8080"
+//	var port string = os.Getenv("PORT")
 
 //	if port == "" {
 //		log.Fatal("$PORT must be set")
 //	}
+	return port
 }
 
 type contactInfo struct {
@@ -28,15 +25,15 @@ type contactInfo struct {
 }
 
 func main() {
-	getPort()
+	var port string = getPort()
 	router := gin.New()
 	router.Use(gin.Logger())
 	router.LoadHTMLGlob("templates/*")
 
 	// directories
-	router.Static("/static", "static")
 	router.Static("/css", "static/css")
-	//router.Static("/scripts", "static/scripts")
+	router.Static("/scripts", "static/scripts")
+	//router.Static("/fonts", "static/fonts/")
 	//router.Static("/media", "static/media")
 
 	// serve pages
