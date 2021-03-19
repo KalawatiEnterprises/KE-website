@@ -78,12 +78,13 @@ button:active {
 .bottom-menu .fa {
 	font-size: 2rem;
 }
+.bottom-menu .fa-whatsapp {
+	font-size: 2.2rem;
+}
 
 .bottom-menu a {
 	color: #FFFFFF;
 }
-
-
 
 .content-blocks {
         display: flex;
@@ -266,22 +267,9 @@ nav a:active {
 		flex-wrap: wrap;
 		height: auto;
 	}
-	/*.head .site-title {
-		font-size: 1.4rem;
-		padding: 6px 20px 0px 10px;
-	}
-	.head .site-subtitle {
-		font-size: 1rem;
-		padding: 3px 20px 3px 10px;
-		display: block;
-	}*/
 	nav {
 		margin-left: auto;
 	}
-	/*nav a {
-		font-size: 1.1rem;
-		padding: 5px;
-	}*/
 	.head .locate-button {
 		margin: auto;
 	}
@@ -294,21 +282,24 @@ nav a:active {
 	.bottom-menu .menu-buttons {
 		display: none;
 	}
-	/*.head .site-title-container {
-		display: none;
+	.bottom-menu {
+		flex-direction: row-reverse;
+		justify-content: center;
 	}
-	.head .locate-button {
-		left: 4px;
-	}*/
 	.button {
 		height: 35px;
 		width: 90px;
 	}
-	/*nav {
-		width: 253px;
-	}*/
 	.content-block {
 		padding: 8px;
 		margin: 12px;
+	}
+	.footer .flex-container {
+		padding: 0.5rem 0.5rem 4rem 0.5rem;
+	}
+	.footer .flex-content {
+		margin: 1rem auto;
+		width: 21rem;
+        	height: 18rem;
 	}
 }
