@@ -7,16 +7,6 @@ import (
 	"fmt"
 )
 
-func getPort() string { // automatically get the assigned port on heroku
-	var port string = "8080"
-//	var port string = os.Getenv("PORT")
-
-//	if port == "" {
-//		log.Fatal("$PORT must be set")
-//	}
-	return port
-}
-
 type contactInfo struct {
 	name string
 	email string
@@ -25,7 +15,8 @@ type contactInfo struct {
 }
 
 func main() {
-	var port string = getPort()
+	var port string = "8080"
+//	var port string = os.Getenv("PORT")
 	router := gin.New()
 	router.Use(gin.Logger())
 	router.LoadHTMLGlob("templates/*")
