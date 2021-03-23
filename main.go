@@ -36,11 +36,9 @@ func main() {
 		c.HTML(http.StatusOK, "brands.html", nil)
 	})
 
-/*
-	router.GET("/contactus", func (c *gin.Context) {
-		c.HTML(http.StatusOK, "contactus.html", nil)
+	router.GET("/contact", func (c *gin.Context) {
+		c.HTML(http.StatusOK, "contact.html", nil)
 	})
-*/
 	//router.POST("/contactus", getContact)
 
 	router.Run(":" + port)

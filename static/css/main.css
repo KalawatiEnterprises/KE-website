@@ -85,6 +85,21 @@ button:active {
 .bottom-menu a {
 	color: #FFFFFF;
 }
+#wa-icon {
+	color: #47C556;
+}
+#ig-icon {
+	color: #C7137F;
+}
+#fb-icon {
+	color: #4862A2;
+}
+#yt-icon {
+	color: #C81F1F;
+}
+#twt-icon {
+	color: #2CA7EF;
+}
 
 .content-blocks {
         display: flex;
