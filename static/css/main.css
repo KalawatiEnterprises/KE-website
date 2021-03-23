@@ -111,7 +111,7 @@ button:active {
 	border: 2px solid #232627;
 	padding: 20px;
 	margin: 20px;
-	height: 350px;
+	min-height: 350px;
 	box-shadow: 1px 1px 4px #232627;
 }
 

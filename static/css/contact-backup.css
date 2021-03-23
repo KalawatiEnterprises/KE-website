@@ -1,0 +1,76 @@
+#form-container {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	flex-direction: row;
+}
+
+#form-container div {
+	width: 50%;
+	height: 22rem;
+	border: 1px solid violet;
+	overflow: auto;
+	position: relative;
+}
+
+.submit {
+	position: absolute;
+	bottom: 1rem;
+	right: 1rem;
+
+	/* copied from button in main.css */
+	color: #FFFFFF; 
+        background-color: #333333; 
+        display: inline;
+  
+        border: 1px solid #f487c3; 
+        border-radius: 17px;
+  
+        cursor: pointer;
+        height: 35px;
+  
+        font-size: 16px;
+}
+
+/* copied from button:hover in main.css */
+.submit:hover {
+	color: #37d29e; 
+        border-color: #37d29e;
+}
+
+.form-prompt {
+	overflow: hidden;
+}
+
+.form-prompt p {
+	display: inline;
+	font-size: 3rem;
+}
+
+form label {
+	font-size: 1.3rem;
+}
+
+form .textbox {
+	font-size: 1.3rem;
+	width: 60%;
+	margin-left: 40px;
+	border: 1px solid #F487C3;
+	border-radius: 4px;
+}
+form .textbox:focus {
+	border-color: #5B76B7;
+}
+
+@media only screen and (max-device-width: 480px) {
+	#form-container {
+		flex-wrap: wrap;
+		flex-direction: column-reverse;
+	}
+	#form-container div {
+		width: 100%;
+		border: 1px solid violet;
+		overflow: auto;
+		position: relative;
+	}
+}
