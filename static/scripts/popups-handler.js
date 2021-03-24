@@ -10,3 +10,12 @@ function showPopupForm() {
 		}
 	});
 }
+
+if (/Android|webOS|iPhone|iPod/i.test(navigator.userAgent)) {
+	popupForm.addEventListener('mouseover', (e) => {
+		if (e.target.className == "textbox") {
+			// make it move the form upwards
+			popupForm.style.display = "none";
+		}
+	});
+}

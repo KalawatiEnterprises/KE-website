@@ -54,6 +54,7 @@ func getContact (c *gin.Context) {
 		message : c.PostForm("message"),
 	}
 	fmt.Println(contact)
+	c.HTML(http.StatusOK, "brands.html", nil)
 
 	/*
 	if (contact.email != "") {

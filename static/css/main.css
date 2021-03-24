@@ -59,7 +59,7 @@ form label {
 }
 form .textbox {
         font-size: 1.3rem;
-        width: 80%;
+        width: 100%;
         /*margin-left: 40px;*/
         border: 1px solid #F487C3; 
         border-radius: 4px;
@@ -70,6 +70,31 @@ form .textbox:focus {
 form #message {
         width: 80%;
 }
+form .submit {
+	position: absolute;
+	right: 1rem;
+	bottom: 2rem;
+
+	/* copied from button */
+        color: #FFFFFF;  
+        background-color: #333333;  
+        display: inline;
+
+        border: 1px solid #f487c3;  
+        border-radius: 17px;
+
+        cursor: pointer;
+        height: 35px;
+	width: 5.5rem;
+
+        font-size: 16px;
+}
+/* copied from button:hover */
+.submit:hover {
+        color: #37d29e;  
+        border-color: #37d29e; 
+}
+
 
 .popup-container {
 	background-color: #282c34dd;
@@ -87,9 +112,8 @@ form #message {
 .popup {
 	padding: 1rem;
 	background-color: white;
-	height: 18rem;
+	/*height: 18rem;*/
 	width: 32rem;
-	border: 1px solid white;
 	position: relative;
 	box-shadow: 1px 1px 8px  #37d29e;
 	border: 1px solid #37d29e;
@@ -357,5 +381,15 @@ nav a:active {
 		margin: 1rem auto;
 		width: 21rem;
         	height: 18rem;
+	}
+	.popup {
+		padding: 1rem;
+		background-color: white;
+		width: 80%;
+		height: 40vh;
+	}
+	form .submit {
+		right: 1rem;
+		bottom: 0.8rem;
 	}
 }
