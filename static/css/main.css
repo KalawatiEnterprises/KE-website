@@ -54,6 +54,47 @@ button:active {
         color: #333333;
 }
 
+form label {
+        font-size: 1.3rem;
+}
+form .textbox {
+        font-size: 1.3rem;
+        width: 80%;
+        /*margin-left: 40px;*/
+        border: 1px solid #F487C3; 
+        border-radius: 4px;
+}
+form .textbox:focus {
+        border-color: #5B76B7; 
+}
+form #message {
+        width: 80%;
+}
+
+.popup-container {
+	background-color: #282c34dd;
+	/*display: flex; this will be modified by JS*/
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	justify-content: center;
+	align-items: center;
+}
+.popup {
+	padding: 1rem;
+	background-color: white;
+	height: 18rem;
+	width: 32rem;
+	border: 1px solid white;
+	position: relative;
+	box-shadow: 1px 1px 8px  #37d29e;
+	border: 1px solid #37d29e;
+}
+
 .bottom-menu {
 	position: fixed;
 	bottom: 0;
