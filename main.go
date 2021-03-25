@@ -53,8 +53,6 @@ func getContact (c *gin.Context) {
 		phone   : c.PostForm("phone"),
 		message : c.PostForm("message"),
 	}
-	fmt.Println(contact)
-	c.HTML(http.StatusOK, "brands.html", nil)
 
 	/*
 	if (contact.email != "") {
@@ -64,4 +62,12 @@ func getContact (c *gin.Context) {
 		notifySubmission(contact.name, contact.email, contact.phone, contact.message)
 	}
 	*/
+
+	fmt.Println(contact) // for testing
+	c.HTML(http.StatusOK, "thankyou.html", gin.H{
+        	"name"    : contact.name,
+        	"email"   : contact.email,
+        	"phone"   : contact.phone,
+		"message" : contact.message,
+    	})
 }
