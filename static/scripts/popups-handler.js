@@ -1,4 +1,5 @@
 const popupForm = document.getElementById("popup-form-container");
+const form = document.getElementById("popup-form");
 
 function showPopupForm() {
 	popupForm.style.display = "flex";
@@ -11,11 +12,19 @@ function showPopupForm() {
 	});
 }
 
+// raise while inputting text
 if (/Android|webOS|iPhone|iPod/i.test(navigator.userAgent)) {
-	popupForm.addEventListener('mouseover', (e) => {
+	form.addEventListener('mouseover', (e) => {
 		if (e.target.className == "textbox") {
-			// make it move the form upwards
-			popupForm.style.display = "none";
+			form.style.marginTop = "-15rem";
+		}
+	});
+}
+// the opposite of above
+if (/Android|webOS|iPhone|iPod/i.test(navigator.userAgent)) {
+	form.addEventListener('mouseout', (e) => {
+		if (e.target.className == "textbox") {
+			form.style.marginTop = "0rem";
 		}
 	});
 }
