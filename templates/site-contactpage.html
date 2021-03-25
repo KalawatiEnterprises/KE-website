@@ -2,14 +2,14 @@
 <div class="popup-container" id="popup-form-container">
 	<div class="popup" id="popup-form">
 	        <form action="/contact" method="post">
-			<label for="fullname">Name:</label><br/>
+			<label for="fullname" required>Name:</label><br/>
 			<input type="text" id="fullname" name="fullname" class="textbox"></input><br/>
 	
-			<label for="email">Email:</label><br/>
-			<input type="text" id="email" name="email" class="textbox"></input><br/>
+			<label for="email" required>Email:</label><br/>
+			<input type="email" id="email" name="email" class="textbox"></input><br/>
 			
 			<label for="phone">Phone:</label><br/>
-			<input type="text" id="phone" name="phone" class="textbox"></input><br/>
+			<input type="tel" id="phone" name="phone" class="textbox"></input><br/>
 	
 			<label for="message">Message:</label><br/>
 			<textarea id="message" name="message" rows="2" class="textbox"></textarea><br/>

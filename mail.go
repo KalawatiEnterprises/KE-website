@@ -26,7 +26,8 @@ type Sender struct {
 	User     string
 	Password string
 }
-var sender Sender = Sender{"kalawatienterprises0@gmail.com", ""}
+// var sender Sender = Sender{"kalawatienterprises0@gmail.com", ""}
+var sender Sender = Sender{"yourlocalweebvidhukant@gmail.com", ""}
 
 func (sender Sender) SendMail(Dest []string, Subject, bodyMessage string) {
 
@@ -93,13 +94,13 @@ func (sender *Sender) WritePlainEmail(dest []string, subject, bodyMessage string
 }
 
 // modified code
-func confirmMail (body string, r string) {
+func responseMail (name string, body string, r string) {
         //The receiver needs to be in slice as the receive supports multiple receiver
         receiver := []string{r}
 
         subject := "Thanks for contacting Kalawati Enterprises!"
 
-        greeting := "Thanks for contacting Kalawati Enterprises! You will get a call or an emailregarding this following message you sent:<br>"
+        greeting := "Thanks for contacting Kalawati Enterprises," + name + "! You will get a call or an email regarding this following message you sent:<br>"
         message := `
         <!DOCTYPE HTML PULBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
         <html>
@@ -108,7 +109,7 @@ func confirmMail (body string, r string) {
         </head>
         <body>` + greeting + body + `<br>
         <div class="moz-signature">
-        <b><br><br>Regards<br>Kalawati Enterprises(Not Alex)</b>
+        <b><br><br>Regards<br>Kalawati Enterprises</b>
         </div>
         </body>
         </html>

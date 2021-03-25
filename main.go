@@ -44,8 +44,6 @@ func main() {
 	router.Run(":" + port)
 }
 
-// this reads the context
-// so nothing else needs to be passed
 func getContact (c *gin.Context) {
 	contact := contactInfo {
 		name    : c.PostForm("fullname"),
@@ -54,14 +52,10 @@ func getContact (c *gin.Context) {
 		message : c.PostForm("message"),
 	}
 
-	/*
-	if (contact.email != "") {
-		confirmMail(contact.message, contact.email)
-	}
 	if (contact.name != "" && (contact.email != "" || contact.phone != "")) {
-		notifySubmission(contact.name, contact.email, contact.phone, contact.message)
+		responseMail(contact.name, contact.message, contact.email)
+		//notifySubmission(contact.name, contact.email, contact.phone, contact.message)
 	}
-	*/
 
 	fmt.Println(contact) // for testing
 	c.HTML(http.StatusOK, "thankyou.html", gin.H{
