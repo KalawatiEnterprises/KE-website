@@ -2,7 +2,7 @@
 <html lang="en-IN">
 <head>
 	<link rel="stylesheet" href="css/main.css" type="text/css"/>
-	<link rel="stylesheet" href="css/brandsPage.css" type="text/css"/>
+	<link rel="stylesheet" href="css/brands.css" type="text/css"/>
 	<script src="https://kit.fontawesome.com/b26fa8d786.js" crossorigin="anonymous"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Kalawati Enterprises Homepage (beta)</title>
@@ -10,57 +10,67 @@
 <body>
 {{ template "site-header.html" .}}
 
-<div class="main" id="brands-main">
+<div class="main"><div class="tiles-container" id="brands">
 
-	<div class="tiles-container" id="brands">
-
-		<div class="tile" id="hachiman">
-			<div class="info" id="info">
-				<p class="title">Hikigaya Hachiman</p>
+		<div class="tile" id="tile1">
+			<div class="more-info" id="more-info1">
+				<p>
+					Vidhu gives it 7.5/10 stars
+				</p>
+				<a href="media/ats1.pdf">read here</a>
+				<p>
+					Tags: shoujo/yuri
+				</p>
+				<p>
+					Type: ranobe (adapted to anime)
+				</p>
 			</div>
-		</div>
-
-		<!--
-		<div class="tile" id="ishigami">
 			<div class="info">
-				<p class="title">Ishigami Yuu</p>
+				<p class="title">Adachi to Shimamura</p>
 			</div>
 		</div>
-		<div class="tile" id="kaguya">
-			<div class="info">	
-				<p class="title">Shinomiya Kaguya</p>
+
+		<div class="tile" id="tile2">
+			<div class="more-info" id="more-info2">
+				<p>
+					Vidhu hasn't read this because he no longer identifies as a weeb
+				</p>
+				<a href="https://www.novelupdates.com/series/tate-no-yuusha-no-nariagari-ln"/>read here</a>
+				<p>
+					Tags: isekai
+				</p>
+				<p>
+					Type: ranobe (adapted to anime)
+				</p>
+			</div>
+			<div class="info">
+				<p class="title">Rising of The Shield Hero</p>
 			</div>
 		</div>
-		<div class="tile" id="">
-			<div class="info"></div>
+
+		<div class="tile" id="tile3">
+			<div class="more-info" id="more-info3">
+				<p>
+					Vidhu gives it 9/10 stars
+				</p>
+				<a href="https://mangapark.net/manga/gokushufudou-the-way-of-the-house-husband/i1295737/c001/1"/>read here</a>
+				<p>
+					Tags: shounen/comedy/cooking
+				</p>
+				<p>
+					Type: manga (not adapted yet)
+				</p>
+			</div>
+			<div class="info">
+				<p class="title">Way of The House-Husband</p>
+			</div>
 		</div>
-		<div class="tile" id="">
-			<div class="info"></div>
-		</div>
-		<div class="tile" id="">
-			<div class="info"></div>
-		</div>
-		<div class="tile" id="">
-			<div class="info"></div>
-		</div>
-		<div class="tile" id="">
-			<div class="info"></div>
-		</div>
-		<div class="tile" id="">
-			<div class="info"></div>
-		</div>
-		<div class="tile" id="">
-			<div class="info"></div>
-		</div>
-		<div class="tile" id="">
-			<div class="info"></div>
-		</div>
-		-->
-	</div>
-</div>
+
+</div></div>
 
 {{ template "site-bottom-menu.html" .}}
 {{ template "site-footer.html" .}}
 {{ template "site-contactpage.html" .}}
+<script src="scripts/brands.js"></script>
 </body>
 </html>

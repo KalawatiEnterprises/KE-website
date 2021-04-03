@@ -1,0 +1,79 @@
+.main {
+	width: 96%;
+}
+
+.tiles-container {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+	justify-content: space-around;
+}
+
+.tile {
+	transition: width 1.5s;
+	display: inline-block;
+	background-color: white;
+	border: 1px solid #232627;
+        border-radius: 20px;
+	box-shadow: 1px 1px 8px #232627;
+	cursor: pointer;
+
+	position: relative;
+	z-index: 0;
+	
+	height: 20rem;
+	width: 18rem;
+	margin: 1rem 1rem;
+
+
+	/*padding: 10px 100px;
+	margin: 10px auto;*/
+	overflow: hidden;
+}
+
+.tile .info {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	height: 3rem;
+	z-index: 1;
+	
+	background: #FCFCFCe6;
+	box-shadow: 0rem -0.1rem 1rem 1rem #FCFCFCe6;
+}
+.info .title {
+	display: inline-block;
+	margin: 0px;
+	padding: 0px 0px 0px 6px;
+
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+
+.tile .more-info {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	padding: 1rem;
+	background-color: #FFFFFFdd;
+	z-index: 2;
+	display: none;
+}
+
+#tile1 {
+	background: url("../media/atsc1.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#tile2 {
+	background: url("https://cdn.novelupdates.com/images/2016/08/Tate-no-Yuusha-no-Nariagari-vol-1.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#tile3 {
+	background: url("https://xcdn-000.animemark.com/acg_covers/W600/1c/81/1c8179fca5157a2175838326afca8a93e11f6c58_41758_200_284.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}

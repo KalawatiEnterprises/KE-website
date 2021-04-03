@@ -24,8 +24,7 @@ func main() {
 	// directories
 	router.Static("/css", "static/css")
 	router.Static("/scripts", "static/scripts")
-	//router.Static("/fonts", "static/fonts/")
-	//router.Static("/media", "static/media")
+	router.Static("/media", "static/media")
 
 	// serve pages
 	router.GET("/", func (c *gin.Context) {

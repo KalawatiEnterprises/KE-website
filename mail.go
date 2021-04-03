@@ -8,7 +8,18 @@ import (
 	"mime/quotedprintable"
 	"net/smtp"
 	"strings"
+	"github.com/joho/godotenv"
+	"log"
+	"os"
 )
+
+var password string
+func init() {
+	if err := godotenv.Load(); err != nil {
+		log.Print("No .env file found")
+	}
+	password,_ =  os.LookupEnv("MAIL_PASSWORD")
+}
 
 /**
 	Modified from https://gist.github.com/jpillora/cb46d183eca0710d909a
@@ -27,7 +38,7 @@ type Sender struct {
 	Password string
 }
 // var sender Sender = Sender{"kalawatienterprises0@gmail.com", ""}
-var sender Sender = Sender{"yourlocalweebvidhukant@gmail.com", ""}
+var sender Sender = Sender{"yourlocalweebvidhukant@gmail.com", password}
 
 func (sender Sender) SendMail(Dest []string, Subject, bodyMessage string) {
 
