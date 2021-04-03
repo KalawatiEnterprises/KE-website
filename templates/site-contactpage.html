@@ -1,7 +1,9 @@
-<!DOCTYPE html>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="scripts/form.js"></script>
 <div class="popup-container" id="popup-form-container">
 	<div class="popup" id="popup-form">
-	        <form action="/contact" method="post">
+	        <!--form action="/contact" method="post"-->
+	        <form>
 			<label for="fullname" required>Name:</label><br/>
 			<input type="text" id="fullname" name="fullname" class="textbox"></input><br/>
 	
@@ -18,5 +20,5 @@
 	        </form>
 	</div>
 </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<div class="messagebox" id="form-messagebox"></div>
 <script src="scripts/popups-handler.js"></script>

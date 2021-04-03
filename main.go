@@ -36,9 +36,6 @@ func main() {
 		c.HTML(http.StatusOK, "brands.html", nil)
 	})
 
-	router.GET("/contact", func (c *gin.Context) {
-		c.HTML(http.StatusOK, "contact.html", nil)
-	})
 	router.POST("/contact", getContact)
 
 	router.Run(":" + port)
@@ -52,16 +49,21 @@ func getContact (c *gin.Context) {
 		message : c.PostForm("message"),
 	}
 
+	/*
 	if (contact.name != "" && (contact.email != "" || contact.phone != "")) {
 		responseMail(contact.name, contact.message, contact.email)
 		//notifySubmission(contact.name, contact.email, contact.phone, contact.message)
 	}
+	*/
 
 	fmt.Println(contact) // for testing
-	c.HTML(http.StatusOK, "thankyou.html", gin.H{
-        	"name"    : contact.name,
-        	"email"   : contact.email,
-        	"phone"   : contact.phone,
-		"message" : contact.message,
+	/*
+	c.HTML(200, "thankyou.html", gin.H {
+         	"name"    : contact.name,
+         	"email"   : contact.email,
+         	"phone"   : contact.phone,
+	 	"message" : contact.message,
     	})
+	*/
+	c.JSON(200, "ye")
 }

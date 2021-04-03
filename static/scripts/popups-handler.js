@@ -1,16 +1,18 @@
 const popupForm = document.getElementById("popup-form-container");
+// const submitButton = document.getElementById("submit-form");
 const form = document.getElementById("popup-form");
 
-function showPopupForm() {
+const showPopupForm = () => {
 	popupForm.style.display = "flex";
 
-	// hide popup when background is clicked
-	popupForm.addEventListener('click', (e) => {
-		if (e.target.id == "popup-form-container") {
-			popupForm.style.display = "none";
-		}
-	});
 }
+
+// hide popup when background is clicked
+popupForm.addEventListener('click', (e) => {
+	if (e.target.id == "popup-form-container") {
+		popupForm.style.display = "none";
+	}
+});
 
 // raise while inputting text
 if (/Android|webOS|iPhone|iPod/i.test(navigator.userAgent)) {
