@@ -75,6 +75,13 @@
 	color: #37D29E;
 }
 
+.more-info .links {
+	border: 1px solid purple;
+	margin: auto;
+	/*position: absolute;
+	bottom: 1rem;*/
+}
+/*
 #tile1 {
 	background: url("../media/atsc1.png");
 	background-repeat: no-repeat;
@@ -95,3 +102,4 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+*/

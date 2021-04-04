@@ -28,3 +28,16 @@ tile4.addEventListener('mouseout', () => {
 	document.getElementById("more-info4").style.display = "none";
 });
 
+tile5.addEventListener('mouseover', () => {
+	document.getElementById("more-info5").style.display = "inline-block";
+});
+tile5.addEventListener('mouseout', () => {
+	document.getElementById("more-info5").style.display = "none";
+});
+
+tile6.addEventListener('mouseover', () => {
+	document.getElementById("more-info6").style.display = "inline-block";
+});
+tile6.addEventListener('mouseout', () => {
+	document.getElementById("more-info6").style.display = "none";
+});
