@@ -4,8 +4,10 @@ const form = document.getElementById("popup-form");
 
 const showPopupForm = () => {
 	popupForm.style.display = "flex";
-
 }
+
+// show form from the bottom menu button
+document.getElementById("ct-b").addEventListener('click', showPopupForm)
 
 // hide popup when background is clicked
 popupForm.addEventListener('click', (e) => {

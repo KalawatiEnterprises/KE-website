@@ -1,4 +1,4 @@
-const tile1 = document.getElementById("tile1");
+//const tile1 = document.getElementById("tile1");
 
 tile1.addEventListener('mouseover', () => {
 	document.getElementById("more-info1").style.display = "inline-block";
@@ -20,3 +20,11 @@ tile3.addEventListener('mouseover', () => {
 tile3.addEventListener('mouseout', () => {
 	document.getElementById("more-info3").style.display = "none";
 });
+
+tile4.addEventListener('mouseover', () => {
+	document.getElementById("more-info4").style.display = "inline-block";
+});
+tile4.addEventListener('mouseout', () => {
+	document.getElementById("more-info4").style.display = "none";
+});
+
