@@ -54,12 +54,25 @@
 
 .tile .more-info {
 	position: absolute;
-	height: 100%;
-	width: 100%;
-	padding: 1rem;
+	padding: 0.5rem 1rem;
 	background-color: #FFFFFFdd;
 	z-index: 2;
 	display: none;
+	height: 19rem;
+	width: 17rem;
+}
+
+.tile .more-info * {
+	font-family: 'Quicksand', sans-serif;
+}
+.tile .more-info a {
+	color: #66769F;
+	text-decoration: none;
+	display: block;
+	padding: 0.2rem;
+}
+.tile .more-info a:hover {
+	color: #37D29E;
 }
 
 #tile1 {
@@ -74,6 +87,11 @@
 }
 #tile3 {
 	background: url("https://xcdn-000.animemark.com/acg_covers/W600/1c/81/1c8179fca5157a2175838326afca8a93e11f6c58_41758_200_284.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#tile4 {
+	background: url("../media/KisanP1.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 }

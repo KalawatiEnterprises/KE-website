@@ -15,6 +15,8 @@ type contactInfo struct {
 }
 
 func main() {
+	// Set Gin to production mode
+	// gin.SetMode(gin.ReleaseMode)
 	var port string = "8080"
 //	var port string = os.Getenv("PORT")
 	router := gin.New()
@@ -26,6 +28,8 @@ func main() {
 	router.Static("/scripts", "static/scripts")
 	router.Static("/media", "static/media")
 
+	router.Static("/catalogues", "static/media/catalogues")
+
 	// serve pages
 	router.GET("/", func (c *gin.Context) {
 		c.HTML(http.StatusOK, "index.html", nil)
@@ -33,6 +37,14 @@ func main() {
 
 	router.GET("/brands", func (c *gin.Context) {
 		c.HTML(http.StatusOK, "brands.html", nil)
+	})
+
+	router.GET("/comingsoon", func (c *gin.Context) {
+		c.HTML(http.StatusOK, "coming-soon.html", nil)
+	})
+
+	router.GET("/catalogues", func (c *gin.Context) {
+		c.String(http.StatusOK, "coming soon")
 	})
 
 	router.POST("/contact", getContact)
@@ -64,5 +76,6 @@ func getContact (c *gin.Context) {
 	 	"message" : contact.message,
     	})
 	*/
+	// send confirmation to the client
 	c.JSON(200, "ye")
 }
