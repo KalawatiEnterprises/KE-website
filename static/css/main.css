@@ -5,13 +5,20 @@
 }*/
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap');
 
 * { 
 	font-family: "Roboto", sans-serif;
 	font-weight: 400;
 	font-size: 1rem;
         transition-duration: 0.4s;
+}
+
+em {
+	font-weight: 600;
+}
+strong {
+	font-weight: 700;
 }
 
 

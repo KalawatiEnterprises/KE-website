@@ -1,3 +1,7 @@
+em, strong {
+	font-style: normal;
+}
+
 .main {
 	width: 96%;
 }
@@ -23,9 +27,9 @@
 	position: relative;
 	z-index: 0;
 	
-	height: 20rem;
-	width: 18rem;
-	margin: 1rem 1rem;
+	height: 22rem; /* reduce 2 for phone*/
+	width: 20rem; /* reduce 2 for phone*/
+	margin: 1.5rem 1.5rem;
 
 
 	/*padding: 10px 100px;
@@ -57,19 +61,18 @@
 	padding: 0.5rem 1rem;
 	background-color: #FFFFFFdd;
 	z-index: 2;
-	display: none;
-	height: 19rem;
-	width: 17rem;
+	display: absolute;
+	height: 21rem;
+	width: 18rem;
+	/*flex-direction: column;
+	justify-content: space-around;*/
 }
+/*.tile:hover .more-info {
+	display: flex;
+}*/
 
 .tile .more-info * {
 	font-family: 'Quicksand', sans-serif;
-}
-.tile .more-info a {
-	color: #66769F;
-	text-decoration: none;
-	display: block;
-	padding: 0.2rem;
 }
 .tile .more-info a:hover {
 	color: #37D29E;
@@ -77,9 +80,31 @@
 
 .more-info .links {
 	border: 1px solid purple;
-	margin: auto;
-	/*position: absolute;
-	bottom: 1rem;*/
+	display: flex;
+	justify-content: space-evenly;
+	padding: 0.5rem;
+}
+.more-info .links a {
+	color: #66769F;
+	text-decoration: none;
+}
+
+.more-info .desc {
+	text-align: center;
+}
+
+#supreme .desc * {
+	font-size: 1.8rem;
+	display: inline-block;
+}
+#supreme .desc strong,
+#supreme .desc em {
+	font-size: 2.5rem;
+}
+
+#supreme .desc em,
+#supreme .desc strong {
+	color: #701D2C;
 }
 /*
 #tile1 {
@@ -103,3 +128,15 @@
 	background-size: cover;
 }
 */
+@media only screen and (max-device-width: 480px) {
+	.tile {
+		height: 20rem;
+		width: 18rem;
+		margin: 1.5rem 1.5rem;
+	}
+	.tile .more-info {
+		padding: 0.5rem 1rem;
+		height: 19rem;
+		width: 16rem;
+	}
+}
