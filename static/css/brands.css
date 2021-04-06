@@ -1,3 +1,6 @@
+/* Hindi font */
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@500&display=swap');
+
 em, strong {
 	font-style: normal;
 }
@@ -14,11 +17,8 @@ em, strong {
 
 	justify-content: space-around;
 }
-
-.tile {
-	transition: width 1.5s;
-	display: inline-block;
-	background-color: white;
+.tile { transition: width 1.5s;
+	display: inline-block; background-color: white;
 	border: 1px solid #232627;
         border-radius: 20px;
 	box-shadow: 1px 1px 8px #232627;
@@ -67,9 +67,9 @@ em, strong {
 	/*flex-direction: column;
 	justify-content: space-around;*/
 }
-/*.tile:hover .more-info {
-	display: flex;
-}*/
+.tile:hover .more-info {
+	display: absolute;
+}
 
 .tile .more-info * {
 	font-family: 'Quicksand', sans-serif;
@@ -93,19 +93,35 @@ em, strong {
 	text-align: center;
 }
 
+#supreme .desc strong,
+#supreme .desc em {
+	font-size: 2.5rem;
+	color: #701D2C;
+}
 #supreme .desc * {
 	font-size: 1.8rem;
 	display: inline-block;
 }
-#supreme .desc strong,
-#supreme .desc em {
-	font-size: 2.5rem;
+
+#avro .desc strong,
+#avro .desc em {
+	color: #b550d4;
+}
+#avro .desc span {
+	/*color: white;
+	background-color: #812731;*/
+	width: 100%;
+	border: 2px solid #FFFFFF;
+	border-radius: 1rem;
+	/*transform: skewX(-10deg);*/
+}
+#avro .desc * {
+	font-size: 2rem;
+	display: inline-block;
+	font-family: 'Hind', sans-serif;
 }
 
-#supreme .desc em,
-#supreme .desc strong {
-	color: #701D2C;
-}
+
 /*
 #tile1 {
 	background: url("../media/atsc1.png");
@@ -138,5 +154,8 @@ em, strong {
 		padding: 0.5rem 1rem;
 		height: 19rem;
 		width: 16rem;
+	}
+	#avro .desc * {
+		font-size: 1.8rem;
 	}
 }
